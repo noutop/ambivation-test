@@ -34,5 +34,14 @@ ul {
   color: rgb(253, 125, 125);
   margin-left: 20px;
 }
+.textNeg {
+  color: rgb(253, 125, 125);
+}
+.textPos {
+  color: rgb(137, 199, 137);
+}
+.textBlack {
+  color: black;
+}
 
 

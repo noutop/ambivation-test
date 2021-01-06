@@ -51,7 +51,8 @@ class CompanyFrom extends React.Component {
             <Button type="submit" onClick={this.handleSubmit}>Add Company</Button>
           </Col>  
         </Row>
-      </Form>   
+      </Form> 
+        
       </Container>
     );
   }

@@ -1,4 +1,5 @@
 import React from 'react';
+import { BsX } from "react-icons/bs";
 
 import {
   Container,
@@ -57,7 +58,9 @@ class CompanyFrom extends React.Component {
         <ul>
           {this.props.companies.map((company, idx) => (
             <li key={idx} className={company.isPositive === null ? "textBlack" :
-              (company.isPositive === false ? "textNeg" : "textPos")}>{company.inputValue}</li>
+              (company.isPositive === false ? "textNeg" : "textPos")}>{company.inputValue }
+            <Button className="ml-2" size="sm" color="danger" onClick={() => this.props.deleteHandler(idx)}> <BsX/></Button>
+            </li>
           ))}
         </ul>
       </Container>

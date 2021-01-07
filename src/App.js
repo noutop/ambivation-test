@@ -58,6 +58,11 @@ class App extends Component {
       })
     })
   }
+  deleteHandler = (id) => {
+    this.setState({
+      companies: this.state.companies.filter((company,idx) => idx !== id)
+    })
+  }
 
   render() {
     return (
@@ -68,6 +73,7 @@ class App extends Component {
               onSubmit={this.addCompany}
               companies={this.state.companies}
               changeToCardsHandler={this.changeToCardsHandler}
+              deleteHandler={this.deleteHandler}
             />
           </Container>
           : <div>
